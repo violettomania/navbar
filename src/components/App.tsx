@@ -4,7 +4,7 @@ export default function App() {
       <nav>
         <div className='nav-center'>
           <div className='nav-header'>
-            <img src='/assets/logo-ddc33e51.svg' className='logo' alt='logo' />
+            <img src='/assets/logo.svg' className='logo' alt='logo' />
             <button className='nav-toggle'>
               <svg
                 stroke='currentColor'

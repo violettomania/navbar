@@ -23,21 +23,11 @@ export default function App() {
           </div>
           <div className='links-container' style={{ height: '0px' }}>
             <ul className='links'>
-              <li>
-                <a href='/'>home</a>
-              </li>
-              <li>
-                <a href='/about'>about</a>
-              </li>
-              <li>
-                <a href='/projects'>projects</a>
-              </li>
-              <li>
-                <a href='/contact'>contact</a>
-              </li>
-              <li>
-                <a href='/profile'>profile</a>
-              </li>
+              {links.map(({ id, url, text }) => (
+                <li key={id}>
+                  <a href={url}>{text}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <ul className='social-icons'>
